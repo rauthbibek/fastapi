@@ -11,6 +11,7 @@ class Items(BaseModel):
 
 app = FastAPI()
 
+# Pydantic type validation
 @app.post('/items/')
 async def create_items(item: Items):
     print(item)
